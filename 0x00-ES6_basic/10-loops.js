@@ -1,9 +1,8 @@
 export default function appendToEachArrayValue(array, appendString) {
     // eslint-disable-next-line
-    for (const idx of array) {
+    for (const value of array) {
 	// eslint-disable-next-line
-	const value = array[idx];
-	array[idx] = appendString + value;
+	array[array.indexof(value)] = appendString + value;
     }
 
     return array;
